@@ -1,0 +1,12 @@
+\documentclass{article}
+\usepackage[swedish]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{amsthm}
+\usepackage{tikz}
+
+\renewcommand{\theenumi}{\alph{enumi}}
+\newtheoremstyle{exam}{1cm}{}{}{}{\bfseries}{,}{0.25cm}{}
+\theoremstyle{exam}
+\newtheorem{q}{Fråga}
+\newcounter{TotalPoints}
+\newcommand{\p}[1]{\textit{(#1p)}\addtocounter{TotalPoints}{#1}}
